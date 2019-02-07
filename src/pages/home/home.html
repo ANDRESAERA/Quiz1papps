@@ -16,7 +16,7 @@
                 src="{{casa.pictures[0].url}}">
 
             <h2 *ngIf="casa.hasOwnProperty('price')"> Precio: {{casa.price.formattedAmount}}</h2>
-            <h3 *ngIf="casa.hasOwnProperty('geo')"> Ubicacion: {{casa.geo.displayName}}</h3>
+            <h3 *ngIf="casa.hasOwnProperty('geo')"> Ubicacion: {{casa.geo.name}}, {{casa.geo.displayName}}</h3>
                 
         </ion-card>
       </ion-col>
